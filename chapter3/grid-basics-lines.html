@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 3: Placing items by line number</title>
+	<link rel="stylesheet" href="../assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        .cards {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .cards li {
+            background-color: #e5dbff;
+            border: 1px solid #d0bfff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .card1 {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        .card2 {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .card3 {
+            grid-column: 1;
+            grid-row: 2 / 4;
+        }
+
+        .card4 {
+            grid-column: 2 / 4;
+            grid-row: 2;
+        }
+
+        .card5 {
+            grid-column: 2 / 4;
+            grid-row: 3;
+        }
+
+
+    </style>
+</head>
+
+<body id="ch1">
+    <header class="example-header">
+        <ul class="meta">
+            <li class="book">The New CSS Layout</li>
+            <li class="author">Rachel Andrew</li>
+            <li class="chapter">Chapter 3</li>
+            <li class="index"><a href="../">Index of examples</a></li>
+        </ul>
+        <div class="inner">
+            <h1>Grid Items</h1>
+        </div>
+    </header>
+    <div class="example">
+
+        <ul class="cards">
+            <li class="card1">
+                <h2>Card 1</h2>
+                <p>These cards have been laid out using grid layout. Card 1 is between column lines 1 and 3, row lines 1 and 2.</p>
+            </li>
+            <li class="card2">
+                <h2>Card 2</h2>
+                <p>These cards have been laid out using grid layout. Card 2 is between column lines 3 and 4, row lines 1 and 2.</p>
+            </li>
+            
+             <li class="card3">
+                <h2>Card 3</h2>
+                <p>These cards have been laid out using grid layout. Card 3 is between column lines 1 and 2, row lines 2 and 4.</p>
+            </li>
+            <li class="card4">
+                <h2>Card 4</h2>
+                <p>These cards have been laid out using grid layout. Card 4 is between column lines 2 and 4, row lines 2 and 3.</p>
+            </li>
+            <li class="card5">
+                <h2>Card 5</h2>
+                <p>These cards have been laid out using grid layout. Card 5 is between column lines 2 and 4, row lines 3 and 4.</p>
+            </li>
+            
+             
+        </ul>
+	 
+    </div>
+</body>
+</html>

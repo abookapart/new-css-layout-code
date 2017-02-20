@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 5: Three equal width columns</title>
+	<link rel="stylesheet" href="../assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        .cards {
+            margin: 0 -10px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        .cards li {
+            background-color: #f4fce3;
+            border: 1px solid #d8f5a2;
+            margin: 0 10px 20px 10px;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body id="ch1">
+    <header class="example-header">
+        <ul class="meta">
+            <li class="book">The New CSS Layout</li>
+            <li class="author">Rachel Andrew</li>
+            <li class="chapter">Chapter 5</li>
+            <li class="index"><a href="../">Index of examples</a></li>
+        </ul>
+        <div class="inner">
+            <h1>Flex Items</h1>
+        </div>
+    </header>
+    <div class="example">
+
+        <ul class="cards">
+            <li>
+                <h2>Card 1</h2>
+                <p>These cards have been laid out using flexbox. By setting display: flex on the parent, all direct children become flex items.</p>
+                <p>This card has some extra content in it, making it taller than the others.</p>
+            </li>
+            <li>
+                <h2>Card 2</h2>
+                <p>These cards have been laid out using flexbox. By setting display: flex on the parent, all direct children become flex items.</p>
+            </li>
+            
+             <li>
+                <h2>Card 3</h2>
+                <p>These cards have been laid out using flexbox. By setting display: flex on the parent, all direct children become flex items.</p>
+            </li>
+            
+        </ul>
+	 
+    </div>
+</body>
+</html>

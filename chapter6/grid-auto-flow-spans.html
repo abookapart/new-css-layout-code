@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 6: Auto-flow with spans</title>
+	<link rel="stylesheet" href="../assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        .cards {
+            margin: 0;
+            padding: 0;
+            grid-gap: 20px;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-flow: dense;
+        }
+
+        .cards li {
+            background-color: #edf2ff;
+            border: 1px solid #bac8ff;
+            padding: 10px;
+            border-radius: 5px;  
+        }
+
+        .cards a:link,
+        .cards a:visited {
+            color: #4263eb;
+        }
+
+        .cards .landscape {
+            grid-column: auto / span 2;
+        }
+
+    </style>
+</head>
+
+<body id="ch1">
+    <header class="example-header">
+        <ul class="meta">
+            <li class="book">The New CSS Layout</li>
+            <li class="author">Rachel Andrew</li>
+            <li class="chapter">Chapter 6</li>
+            <li class="index"><a href="../">Index of examples</a></li>
+        </ul>
+        <div class="inner">
+            <h1>auto-flow with spans</h1>
+        </div>
+    </header>
+    <div class="example">
+
+        <ul class="cards">
+            <li>
+                <h2><a href="">Card 1</a></h2>
+                <p>I am a portrait format card. I will display in a single grid column track.</p>
+            </li>
+            <li>
+                <h2><a href="">Card 2</a></h2>
+                <p>I am a portrait format card. I will display in a single grid column track.</p>
+            </li>
+            
+             <li class="landscape">
+                <h2><a href="">Card 3</a></h2>
+                <p>I am a landscape format card. I will display across two grid column tracks.</p>
+            </li>
+
+             <li>
+                <h2><a href="">Card 4</a></h2>
+                <p>I am a portrait format card. I will display in a single grid column track.</p>
+            </li>
+
+            <li class="landscape">
+                <h2><a href="">Card 5</a></h2>
+                <p>I am a landscape format card. I will display across two grid column tracks.</p>
+            </li>
+
+            <li>
+                <h2><a href="">Card 6</a></h2>
+                <p>I am a portrait format card. I will display in a single grid column track.</p>
+            </li>
+            <li>
+                <h2><a href="">Card 7</a></h2>
+                <p>I am a portrait format card. I will display in a single grid column track.</p>
+            </li>
+            
+        </ul>
+
+	 
+    </div>
+</body>
+</html>

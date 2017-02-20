@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 5: Behavior of auto</title>
+	<link rel="stylesheet" href="../assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        .cards {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr auto 1fr;
+        }
+
+        .cards li {
+            background-color: #f4fce3;
+            border: 1px solid #d8f5a2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .cards .card2 {
+            width: 300px;
+        }
+
+        .cards .card4 {
+            height: 300px;
+        }
+
+    </style>
+</head>
+
+<body id="ch1">
+    <header class="example-header">
+        <ul class="meta">
+            <li class="book">The New CSS Layout</li>
+            <li class="author">Rachel Andrew</li>
+            <li class="chapter">Chapter 5</li>
+            <li class="index"><a href="../">Index of examples</a></li>
+        </ul>
+        <div class="inner">
+            <h1>Grid and auto for track sizing</h1>
+        </div>
+    </header>
+    <div class="example">
+        <ul class="cards">
+            <li>
+                <h2>Card 1</h2>
+                
+            </li>
+            <li class="card2">
+                <h2>Card 2</h2>
+               <p>This card has a width of 300px set.</p>
+            </li>
+            
+             <li>
+                <h2>Card 3</h2>
+                
+            </li>
+            <li class="card4">
+                <h2>Card 4</h2>
+               
+            </li>
+            <li>
+                <h2>Card 5</h2>
+               
+            </li>
+            
+             
+        </ul>
+       
+	 
+    </div>
+</body>
+</html>

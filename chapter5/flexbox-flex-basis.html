@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 5: Three equal width columns</title>
+	<link rel="stylesheet" href="../assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <style>
+        .cards {
+            margin: 0 -10px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        .cards li {
+            background-color: #f4fce3;
+            border: 1px solid #d8f5a2;
+            margin: 0 10px 20px 10px;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+
+        .cards1 li{
+            flex: 0 0 200px;
+        }
+
+        .cards2 li{
+            flex: 1 0 200px;
+        }
+
+        .cards3 li {
+            flex: 1 0 200px;
+        }
+
+        .cards3 li:first-child {
+            flex: 2 0 200px;
+        }
+
+        .cards4 li {
+            flex: 1 0 0;
+        }
+
+        .cards4 li:first-child {
+            flex: 2 0 0;
+        }
+
+       
+
+    </style>
+</head>
+
+<body id="ch1">
+    <header class="example-header">
+        <ul class="meta">
+            <li class="book">The New CSS Layout</li>
+            <li class="author">Rachel Andrew</li>
+            <li class="chapter">Chapter 5</li>
+            <li class="index"><a href="../">Index of examples</a></li>
+        </ul>
+        <div class="inner">
+            <h1>Flex Items</h1>
+        </div>
+    </header>
+    
+    <div class="example">
+        <p>flex: 0 0 200px</p>
+        <ul class="cards cards1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>          
+        </ul>
+    </div>
+    <div class="example">
+        <p>flex: 1 0 200px</p>
+        <ul class="cards cards2">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>          
+        </ul>
+        </div>
+    <div class="example">
+        <p>flex: 1 0 200px / first-child flex: 2 0 200px</p>
+        <ul class="cards cards3">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>          
+        </ul>
+</div>
+    <div class="example">
+        <p>flex: 1 0 0 / first-child flex: 2 0 0</p>
+        <ul class="cards cards4">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>          
+        </ul>
+	 
+    </div>
+</body>
+</html>
